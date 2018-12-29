@@ -1,0 +1,104 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.red-line {
+    position: relative;
+    top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 5px;
+    background-color: #ed265a;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: #398790;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 10px;
+
+}
+
+.prices {
+    background-color: #ffc046;
+}
+
+@supports (grid-area: auto) {
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 20%);
+        grid-template-areas:
+                "navigation"
+                "gallery"
+                "services"
+                "prices"
+                "contact-form"
+                "contacts";
+    }
+
+    nav {
+        grid-area: navigation;
+    }
+
+    #gallery {
+        grid-area: gallery;
+    }
+
+    .services {
+        grid-area: services;
+    }
+
+    .prices {
+        grid-area: prices;
+    }
+
+    .contact-form {
+        grid-area: contact-form;
+    }
+
+    .contacts {
+        grid-area: contacts;
+    }
+
+    img {
+        max-height: 300px;
+    }
+
+    /*styles for big screen*/
+    @media screen and (min-width: 45.75em){
+        .navigation li {
+            display: inline;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        .section-title {
+            grid-column: span 3;
+            text-align: center;
+        }
+
+
+
+
+    }
+
+}
+
+
+
