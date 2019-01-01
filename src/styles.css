@@ -1,5 +1,7 @@
 body {
     font-family: 'Dosis', sans-serif;
+    color: #303132;
+    margin: 0;
 }
 
 ul {
@@ -7,10 +9,7 @@ ul {
 }
 
 .red-line {
-    position: relative;
-    top: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
+
     height: 5px;
     background-color: #ed265a;
 }
@@ -29,24 +28,74 @@ nav li {
 
 }
 
+ul.cards {
+    padding-left: 0;
+}
+
+figcaption.caption {
+    display: flex;
+    line-height: 21px;
+}
+
+figure.card {
+    margin: 0 20px;
+}
+
+img.asset {
+    width: 51px;
+    height: 51px;
+    margin-right: 20px;
+}
+
+li.card-item {
+    margin-top: 30px;
+}
+
+.caption-title {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+li.card-item a {
+    color: #5abfe1;
+}
+
+li.card-item a:hover {
+    color: #f84768;
+}
+
+li.card-item p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .prices {
+    padding-top: 35px;
+    padding-bottom: 10px;
     background-color: #ffc046;
+    color: white;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+
+.prices li p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+hr {
+    height: 2px;
+    background-color: white;
+    border: none;
 }
 
 @supports (grid-area: auto) {
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 20%);
-        grid-template-areas:
-                "navigation"
-                "gallery"
-                "services"
-                "prices"
-                "contact-form"
-                "contacts";
-    }
 
     nav {
         grid-area: navigation;
@@ -56,33 +105,47 @@ nav li {
         grid-area: gallery;
     }
 
-    .services {
+    section.services {
         grid-area: services;
     }
 
-    .prices {
+    section.prices {
         grid-area: prices;
     }
 
-    .contact-form {
-        grid-area: contact-form;
+    footer {
+        grid-area: footer;
     }
 
-    .contacts {
-        grid-area: contacts;
+
+    .wrapper {
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+                "navigation"
+                "gallery"
+                "services"
+                "prices"
+                "footer";
     }
 
-    img {
+
+    #gallery img {
         max-height: 300px;
+        width: 100%;
     }
+
 
     /*styles for big screen*/
-    @media screen and (min-width: 45.75em){
+    @media screen and (min-width: 750px){
         .navigation li {
             display: inline;
         }
 
-        .cards {
+        ul.cards {
+            margin: 100px 220px;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto;
@@ -93,8 +156,12 @@ nav li {
             text-align: center;
         }
 
+    }
 
-
+    @media screen and (min-width: 750px) and (max-width: 1100px) {
+        ul.cards {
+            margin: 100px 10px;
+        }
 
     }
 
