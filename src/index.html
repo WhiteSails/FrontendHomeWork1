@@ -11,167 +11,216 @@
     <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css">
 
-</head>
-<body class="wrapper">
-<span class="red-line"></span>
-<header>
+    <script src="scripts.js"></script>
 
-    <div class="logo"></div>
-    <nav>
+</head>
+<body>
+<div class="red-line"></div>
+<header>
+        <img class="logo" src="../assets/asset8.png">
+    <div class="expandable">
+        <h2 class="menu-button">Menu<span style="margin-left:10px"><i class="fas fa-bars"></i></span></h2>
+    </div>
+    <nav class="menu">
         <ul class="navigation">
-            <li>Paslaugos</li>
-            <li>Apie mus</li>
-            <li>Šventinė erdvė</li>
-            <li>Meniu</li>
-            <li>Pramogos vaikams</li>
-            <li>Galerija</li>
-            <li>Kontaktai</li>
-            <li><img src="../assets/asset7.png"></li>
+            <li><a class="active" href="#">Paslaugos</a></li>
+            <li><a href="#">Apie mus</a></li>
+            <li><a href="#">Šventinė erdvė</a></li>
+            <li><a href="#">Meniu</a></li>
+            <li><a href="#">Pramogos vaikams</a></li>
+            <li><a href="#">Galerija</a></li>
+            <li><a href="#">Kontaktai</a></li>
+            <li><a href="#"><img style="width: 20px;" src="../assets/index.png"></a></li>
         </ul>
     </nav>
+
     <div id="gallery">
         <img src="../assets/images/5.jpg">
     </div>
 </header>
+<main>
 
-<section class="services">
-    <ul class="cards">
-        <li class="card-item">
-            <figure class="card">
-                <figcaption class="caption">
-                    <img class="asset" src="../assets/asset0.png" alt="">
-                    <h2 class="caption-title">Šventės erdvė</h2>
-                </figcaption>
-                <p>DĖŽUTIS – naujos koncepcijos šeimų su vaikais švenčių restoranas.
-                    Tai jauki vieta švęsti vaikų gimtadienius, krikštynas, kitas šeimų su vaikais šventes,
-                    nes čia vienoje erdvėje telpa restoranas, vaikų kavinė su scena,
-                    lauko kiemelis su terasa ir originalus vaikų žaidimų kambarys.
-                    DĖŽUTIS išsiskiria savo moderniu interjeru, kuris yra stilingas ir šiuolaikiškas. <a href="#">Plačiau...</a>
-                </p>
-            </figure>
+    <section class="services">
+        <ul class="cards">
+            <li class="card-item one">
+                <figure class="card">
+                    <figcaption class="caption">
+                        <img class="asset" src="../assets/asset0.png" alt="">
+                        <h2 class="caption-title">Šventės erdvė</h2>
+                    </figcaption>
+                    <p>DĖŽUTIS – naujos koncepcijos šeimų su vaikais švenčių restoranas.
+                        Tai jauki vieta švęsti vaikų gimtadienius, krikštynas, kitas šeimų su vaikais šventes,
+                        nes čia vienoje erdvėje telpa restoranas, vaikų kavinė su scena,
+                        lauko kiemelis su terasa ir originalus vaikų žaidimų kambarys.
+                        DĖŽUTIS išsiskiria savo moderniu interjeru, kuris yra stilingas ir šiuolaikiškas. <a href="#">Plačiau...</a>
+                    </p>
+                </figure>
 
-        </li>
-        <li class="card-item">
-            <figure class="card">
-                <figcaption class="caption">
-                    <img class="asset" src="../assets/asset1.png" alt="">
-                    <h2 class="caption-title">Šventės menu</h2>
-                </figcaption>
-                <p>Restorane DĖŽUTIS Jums nereikia rūpintis savo šventės vaišėmis, nes tai darome mes –
-                    kiekvienai šventei siūlome
-                    labiausiai tinkantį meniu.
-                    DĖŽUTIS – tai šeimoms su vaikais skirtas restoranas,
-                    todėl jame rasite įprastą suaugusiųjų meniu ir specialiai vaikams ruoštą meniu,
-                    atitinkantį mažųjų svečių skonį.
-                    Restorane laukiami ir patys mažiausi svečiai: kūdikiams verdame sveikuoliškas daržovių
-                    tyreles. <a href="#">Plačiau...</a></p>
-            </figure>
-        </li>
-        <li class="card-item">
-            <figure class="card">
-                <figcaption class="caption">
-                    <img class="asset" src="../assets/asset2.png" alt="">
-                    <h2 class="caption-title">Pramogos vaikams</h2>
-                </figcaption>
-                <p>DĖŽUČIO žaidimų kambarys – išskirtinai originalus ir labai spalvingas,
-                    todėl jame bet kokio amžiaus vaikams netrūks aktyvaus judesio ir vaizduotę
-                    skatinančių užsiėmimų. Mums labai svarbi visų šventės dalyvių nuotaika,
-                    todėl kartu su mūsų animatoriais DĖŽUČIO scenoje gimsta smagiausi pasirodymai ir
-                    kiekvienas švenčiantis gimtadienį ar krikštynas mėgaujasi ypatingomis šventės
-                    akimirkomis. <a href="#">Plačiau...</a></p>
-            </figure>
-        </li>
-    </ul>
-</section>
-<section class="prices">
-    <div class="section-title">
-        <h1>Paslaugų kainos</h1>
-        <img src="../assets/asset3.png">
-    </div>
-    <ul class="cards">
-        <li class="card-item">
-            <figure class="card">
-                <h2 class="prices-card-title">Pirmadienį - Ketvirtadienį</h2>
-                <hr>
-                <p>79 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
-                <p>79 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
-                <p>Minimali maisto užsakymo suma GIMTADIENIO šventei – 95 EUR (iki 20 asmenų), 135 EUR (iki 30
-                    asmenų), 175 EUR (iki 40 asmenų), 215 EUR (iki 50 asmenų ir daugiau)</p>
-                <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina suaugusiam asmeniui – nuo 22 EUR</p>
-                <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina vaikui – nuo 6 EUR</p>
-                <p>MOKSLO METŲ UŽBAIGIMO ŠVENTĖS kaina asmeniui su programa, maistu ir gėrimais – 15 EUR</p>
-                <p>Dėl ĮMONĖS VAKARĖLIO, KALĖDINĖS ŠVENTĖS, FOTOSESIJOS ar kito renginio kainos teirautis
-                    administracijos</p>
-            </figure>
-        </li>
+            </li>
+            <li class="card-item two">
+                <figure class="card">
+                    <figcaption class="caption">
+                        <img class="asset" src="../assets/asset1.png" alt="">
+                        <h2 class="caption-title">Šventės menu</h2>
+                    </figcaption>
+                    <p>Restorane DĖŽUTIS Jums nereikia rūpintis savo šventės vaišėmis, nes tai darome mes –
+                        kiekvienai šventei siūlome
+                        labiausiai tinkantį meniu.
+                        DĖŽUTIS – tai šeimoms su vaikais skirtas restoranas,
+                        todėl jame rasite įprastą suaugusiųjų meniu ir specialiai vaikams ruoštą meniu,
+                        atitinkantį mažųjų svečių skonį.
+                        Restorane laukiami ir patys mažiausi svečiai: kūdikiams verdame sveikuoliškas daržovių
+                        tyreles. <a href="#">Plačiau...</a></p>
+                </figure>
+            </li>
+            <li class="card-item three">
+                <figure class="card">
+                    <figcaption class="caption">
+                        <img class="asset" src="../assets/asset2.png" alt="">
+                        <h2 class="caption-title">Pramogos vaikams</h2>
+                    </figcaption>
+                    <p>DĖŽUČIO žaidimų kambarys – išskirtinai originalus ir labai spalvingas,
+                        todėl jame bet kokio amžiaus vaikams netrūks aktyvaus judesio ir vaizduotę
+                        skatinančių užsiėmimų. Mums labai svarbi visų šventės dalyvių nuotaika,
+                        todėl kartu su mūsų animatoriais DĖŽUČIO scenoje gimsta smagiausi pasirodymai ir
+                        kiekvienas švenčiantis gimtadienį ar krikštynas mėgaujasi ypatingomis šventės
+                        akimirkomis. <a href="#">Plačiau...</a></p>
+                </figure>
+            </li>
+        </ul>
+    </section>
 
-        <li class="card-item">
-            <figure class="card">
-                <h2 class="prices-card-title">Penktradienį - Sekmadienį</h2>
-                <hr>
-                <p>99 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
-                <p>119 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 4 valandos</p>
-                <p>Minimali maisto užsakymo suma GIMTADIENIO šventei – 95 EUR (iki 20 asmenų), 135 EUR (iki 30
-                    asmenų), 175 EUR (iki 40 asmenų), 215 EUR (iki 50 asmenų ir daugiau)</p>
-                <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina suaugusiam asmeniui – nuo 22 EUR</p>
-                <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina vaikui – nuo 6 EUR</p>
-                <p>MOKSLO METŲ UŽBAIGIMO ŠVENTĖS kaina asmeniui su programa, maistu ir gėrimais – 15 EUR</p>
-                <p>Dėl ĮMONĖS VAKARĖLIO, KALĖDINĖS ŠVENTĖS, FOTOSESIJOS ar kito renginio kainos teirautis
-                    administracijos</p>
-            </figure>
-        </li>
+    <section class="prices">
+        <div class="section-title">
+            <h1>Paslaugų kainos</h1>
+            <img src="../assets/asset3.png">
+        </div>
+        <ul class="cards">
+            <li class="card-item one">
+                <figure class="card">
+                    <strong class="prices-card-title">Pirmadienį - Ketvirtadienį</strong>
+                    <hr>
+                    <p>79 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
+                    <p>79 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
+                    <p>Minimali maisto užsakymo suma GIMTADIENIO šventei – 95 EUR (iki 20 asmenų), 135 EUR (iki 30
+                        asmenų), 175 EUR (iki 40 asmenų), 215 EUR (iki 50 asmenų ir daugiau)</p>
+                    <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina suaugusiam asmeniui – nuo 22 EUR</p>
+                    <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina vaikui – nuo 6 EUR</p>
+                    <p>MOKSLO METŲ UŽBAIGIMO ŠVENTĖS kaina asmeniui su programa, maistu ir gėrimais – 15 EUR</p>
+                    <p>Dėl ĮMONĖS VAKARĖLIO, KALĖDINĖS ŠVENTĖS, FOTOSESIJOS ar kito renginio kainos teirautis
+                        administracijos</p>
+                </figure>
+            </li>
 
-        <li class="card-item">
-            <figure class="card">
-                <h2 class="prices-card-title">Šventės vedėjas / animatorius</h2>
-                <hr>
-                <p>40 EUR – 2 valandų GIMTADIENIO programa</p>
-                <p>60 EUR – 2 valandų KRIKŠTYNŲ ŠVENTĖS programa</p>
-            </figure>
-        </li>
-    </ul>
-</section>
+            <li class="card-item two">
+                <figure class="card">
+                    <strong class="prices-card-title">Penktradienį - Sekmadienį</strong>
+                    <hr>
+                    <p>99 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 3 valandos</p>
+                    <p>119 EUR – GIMTADIENIO IR KRIKŠTYNŲ ŠVENTĖS trukmė 4 valandos</p>
+                    <p>Minimali maisto užsakymo suma GIMTADIENIO šventei – 95 EUR (iki 20 asmenų), 135 EUR (iki 30
+                        asmenų), 175 EUR (iki 40 asmenų), 215 EUR (iki 50 asmenų ir daugiau)</p>
+                    <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina suaugusiam asmeniui – nuo 22 EUR</p>
+                    <p>KRIKŠTYNŲ ŠVENTĖS maisto kaina vaikui – nuo 6 EUR</p>
+                    <p>MOKSLO METŲ UŽBAIGIMO ŠVENTĖS kaina asmeniui su programa, maistu ir gėrimais – 15 EUR</p>
+                    <p>Dėl ĮMONĖS VAKARĖLIO, KALĖDINĖS ŠVENTĖS, FOTOSESIJOS ar kito renginio kainos teirautis
+                        administracijos</p>
+                </figure>
+            </li>
 
+            <li class="card-item three">
+                <figure class="card">
+                    <strong class="prices-card-title">Šventės vedėjas / animatorius</strong>
+                    <hr>
+                    <p>40 EUR – 2 valandų GIMTADIENIO programa</p>
+                    <p>60 EUR – 2 valandų KRIKŠTYNŲ ŠVENTĖS programa</p>
+                </figure>
+            </li>
+        </ul>
+    </section>
+</main>
 <footer>
-    <div class="section-title">
-        <h1>Kontaktai</h1>
-        <img src="../assets/asset3.png">
-    </div>
+
     <section class="contact-form">
-        <p>Jeigu turite klausimų, susijusių su planuojama švente, drąsiai mums rašykite ir mes pasistengsime kaip
-            įmanoma greičiau atsakyti.</p>
+        <div class="section-title">
+            <h1>Kontaktai</h1>
+            <img src="../assets/asset3.png">
+            <p>Jeigu turite klausimų, susijusių su planuojama švente, drąsiai mums rašykite ir mes pasistengsime kaip
+                įmanoma greičiau atsakyti.</p>
+        </div>
         <form>
-            <input type="text" value="Jūsų vardas">
-            <input type="text" value="Jūsų el.pašto adresas">
-            <input type="text" value="Jūsų telefono numeris">
-            <input type="text" value="Jūsų žinutė">
-            <input class="submit" value="Siųsti">
+            <div class="form-fields">
+                <div class="inputs">
+                    <input type="text" value="Jūsų vardas">
+                    <input type="text" value="Jūsų el.pašto adresas">
+                    <input type="text" value="Jūsų telefono numeris">
+                </div>
+                <div class="textarea">
+                    <textarea class="textarea" style="height: 180px">Jūsų žinutė"</textarea>
+                </div>
+            </div>
+            <button class="submit">Siųsti</button>
         </form>
     </section>
     <section class="contacts">
         <ul class="cards">
-            <li class="card-item">
-                <img src="../assets/asset4.png">
-                <h3>Dėžutis</h3>
+            <li class="card-item one">
+                <figcaption class="caption">
+                    <img class="map" src="../assets/asset4.png">
+                    <h2>Dėžutis</h2>
+                </figcaption>
                 <p>Savanorių prospektas 266, Kaunas 50200</p>
             </li>
-            <li class="card-item">
-                <img src="../assets/asset5.png">
-                <h3>Susisiekite telefonu</h3>
+            <li class="card-item two">
+                <figcaption class="caption">
+                    <img class="phone" src="../assets/asset5.png">
+                    <h2>Susisiekite telefonu</h2>
+                </figcaption>
                 <p>+370 699 87781</p>
             </li>
-            <li class="card-item">
-                <img src="../assets/asset6.png">
-                <h3>Susisiekite el.paštu</h3>
+            <li class="card-item three">
+                <figcaption class="caption">
+                    <img class="envelope" src="../assets/asset6.png">
+                    <h2>Susisiekite el.paštu</h2>
+                </figcaption>
                 <p>labas@dezutis.lt</p>
             </li>
         </ul>
     </section>
+    <img id="fb-button" class="fbbutton" src="../assets/asset7.png">
 </footer>
+
+
+<script>
+    const fbButton = document.querySelector('#fb-button');
+
+    const addClass = () => fbButton.classList.add("fbbutton-bottom-fixed");
+    const removeClass = () => fbButton.classList.remove("fbbutton-bottom-fixed");
+    window.addEventListener('scroll', function () {
+        if (window.scrollY >= 10) {
+            addClass()
+        }
+        else {
+            removeClass()
+        }
+    });
+
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.menu');
+    const navigationItems = document.querySelector('.navigation');
+
+    menuButton.onclick = function() {
+        menu.classList.add('menu-expanded');
+        navigationItems.classList.add('navigation-expanded');
+    }
+
+
+</script>
 </body>
-<script src="scripts.js"></script>
+
 
 </html>
