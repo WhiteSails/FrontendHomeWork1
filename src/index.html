@@ -16,7 +16,6 @@
 
     <link rel="stylesheet" href="styles.css">
 
-    <script src="scripts.js"></script>
 
 </head>
 <body>
@@ -40,7 +39,18 @@
     </nav>
 
     <div id="gallery">
-        <img src="../assets/images/5.jpg">
+        <img src="../assets/images/5.jpg" alt="">
+        <div class="images" style="display: none">
+        <img src="../assets/images/9.jpeg" alt="">
+        <img src="../assets/images/10.jpeg" alt="">
+        <img src="../assets/images/11.jpeg" alt="">
+        <img src="../assets/images/12.jpeg" alt="">
+        <img src="../assets/images/13.jpeg" alt="">
+        <img src="../assets/images/14.jpeg" alt="">
+        <img src="../assets/images/15.jpeg" alt="">
+        <img src="../assets/images/16.jpeg" alt="">
+        <img src="../assets/images/17.jpeg" alt="">
+        </div>
     </div>
 </header>
 <main>
@@ -161,7 +171,7 @@
                     <input type="text" value="Jūsų telefono numeris">
                 </div>
                 <div class="textarea">
-                    <textarea class="textarea" style="height: 180px">Jūsų žinutė"</textarea>
+                    <textarea class="textarea" style="height: 180px">Jūsų žinutė</textarea>
                 </div>
             </div>
             <button class="submit">Siųsti</button>
@@ -169,21 +179,21 @@
     </section>
     <section class="contacts">
         <ul class="cards">
-            <li class="card-item one">
+            <li class="card-item one contact-card">
                 <figcaption class="caption">
                     <img class="map" src="../assets/asset4.png">
                     <h2>Dėžutis</h2>
                 </figcaption>
                 <p>Savanorių prospektas 266, Kaunas 50200</p>
             </li>
-            <li class="card-item two">
+            <li class="card-item two contact-card">
                 <figcaption class="caption">
                     <img class="phone" src="../assets/asset5.png">
                     <h2>Susisiekite telefonu</h2>
                 </figcaption>
                 <p>+370 699 87781</p>
             </li>
-            <li class="card-item three">
+            <li class="card-item three contact-card">
                 <figcaption class="caption">
                     <img class="envelope" src="../assets/asset6.png">
                     <h2>Susisiekite el.paštu</h2>
@@ -192,49 +202,9 @@
             </li>
         </ul>
     </section>
-    <img id="fb-button" class="fbbutton" src="../assets/asset7.png">
+    <img class="fbbutton" src="../assets/asset7.png">
 </footer>
 
-
-<script>
-    const fbButton = document.querySelector('#fb-button');
-
-    const addClass = () => fbButton.classList.add("fbbutton-bottom-fixed");
-    const removeClass = () => fbButton.classList.remove("fbbutton-bottom-fixed");
-    window.addEventListener('scroll', function () {
-        if (window.scrollY >= 10) {
-            addClass()
-        }
-        else {
-            removeClass()
-        }
-    });
-
-    const menuButton = document.querySelector('.menu-button');
-    const menu = document.querySelector('.menu');
-    const navigationItems = document.querySelector('.navigation');
-    const icon = document.querySelector('i');
-    var timesClicked = 0;
-
-
-    menuButton.onclick = function () {
-        timesClicked++;
-        if (timesClicked % 2 == 0) {
-            menu.classList.remove('menu-expanded');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        } else {
-            menu.classList.add('menu-expanded');
-            navigationItems.classList.add('navigation-expanded');
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        }
-
-    };
-
-
-</script>
+<script src="scripts.js"></script>
 </body>
-
-
 </html>

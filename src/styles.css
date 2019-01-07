@@ -47,6 +47,7 @@ nav li a.active, nav li a:hover {
     width: 100%;
 }
 
+
 ul.cards {
     padding-left: 0;
 }
@@ -211,38 +212,47 @@ button:hover {
     padding-left: 40px;
 }
 
-.contacts ul.cards li {
-    transition: transform 1s ease 0.5s;
+.visible {
+
+    animation: wave 1s ease-out;
 }
 
-.contacts ul.cards li:hover {
-    transform: rotate(15deg);
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
 
+    40% {
+        transform: rotate(-15deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
+
 
 .fbbutton {
     width: 40px;
     position: absolute;
     left: 10%;
-    top: 30px;
-    animation: 3s moves forwards;
+    top: 1%;
 }
 
-.fbbutton-bottom-fixed {
+.fbbutton-bottom {
     position: fixed;
     left: 90%;
     top: 90%;
-}
-
-@keyframes moves {
-    from {
-        left: 10%;
-        top: 5%;
-    }
-    to {
-        left: 90%;
-        top: 90%;
-    }
+    transition: top 1.5s, left 1.5s;
 }
 
 @media screen and (max-width: 766px) {
