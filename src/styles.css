@@ -41,10 +41,22 @@ nav li a.active, nav li a:hover {
     color: #F90056;
 }
 
-.active-image {
-    height: 212px;
+#slider {
+    position: relative;
+    height: 460px;
+}
+
+.slider-image {
+    position: absolute;
+    height: inherit;
     width: 100%;
+    opacity: 0;
     object-fit: cover;
+    transition: opacity 3s;
+}
+
+.slider-image.active {
+    opacity: 1;
 }
 
 ul.cards {
@@ -296,6 +308,9 @@ section {
         margin-right: 30px;
     }
 
+    #slider {
+        height: 212px;
+    }
 
     .contact-form {
         margin: 70px 30px;
@@ -314,17 +329,6 @@ section {
     .expandable {
         display: none;
     }
-
-    /*.navigation {*/
-        /*margin-right: 200px;*/
-        /*padding: 12px 0;*/
-    /*}*/
-
-    /*.navigation li {*/
-        /*display: inline;*/
-    /*}*/
-
-
 
     .navigation {
         margin-right: 200px;
@@ -345,10 +349,6 @@ section {
     nav li a.active, nav li a:hover {
         color: #F90056;
 
-    }
-
-    #slider img {
-        height: 465px;
     }
 
     ul.cards {
@@ -382,7 +382,6 @@ section {
     }
 
     div.textarea {
-        /*align-self: stretch;*/
         width: 60%;
         margin-left: 15px;
 
@@ -408,8 +407,8 @@ section {
         left: 7%;
     }
 
-    #slider img {
-        height: 334px;
+    #slider {
+        height: 350px;
     }
 
     .contact-form {

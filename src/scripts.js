@@ -1,31 +1,32 @@
 // slider
 
 let i = 0;
-var sliderImages = [5, 9, 10, 11, 12, 13, 14, 15, 16, 17];
-const activeImage = document.querySelector('.active-image');
+let sliderImages = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+
 
 changeImage = () => {
 
-    if (i < sliderImages.length - 1) {
+    if(i < sliderImages.length - 1) {
         i++;
-
-        activeImage.style.transition = "opacity 0.5s";
-        activeImage.style.opacity = 0;
-        setTimeout(function () {
-
-            activeImage.src = "../assets/images/" + sliderImages[i] + ".jpeg";
-
-            activeImage.style.opacity = 1;
-
-        }, 500);
 
     } else {
         i = 0;
     }
-    setTimeout(changeImage, 6000);
+
+    let activeImage = document.querySelector('.slider-image.active');
+    let inactiveImage = document.querySelector('.slider-image.inactive');
+
+    inactiveImage.src = "../assets/images/" + sliderImages[i] + ".jpeg";
+
+    activeImage.classList.remove('active');
+    activeImage.classList.add('inactive');
+
+    inactiveImage.classList.remove('inactive');
+    inactiveImage.classList.add('active');
+
 };
 
-window.onload = changeImage();
+setInterval(changeImage, 3000);
 
 
 // Expandable menu
@@ -58,21 +59,6 @@ const addClass = () => {
     fbButton.classList.add("fbbutton-bottom");
 };
 
-
-// let fbButtonPosition = 0;
-//
-// function moveFbButton() {
-//
-//     if (window.scrollY >= 10) {
-//         if(fbButtonPosition == 0) {
-//             let bounding = fbButton.getBoundingClientRect();
-//             fbButtonPosition = bounding.top;
-//         }
-//
-//         fbButton.style.top = fbButtonPosition + pageYOffset + 'px';
-//         console.log(fbButtonPosition + "~" + pageYOffset);
-//     }
-// }
 
 window.addEventListener('load', addClass);
 
