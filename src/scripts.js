@@ -1,3 +1,33 @@
+// slider
+
+let i = 0;
+var sliderImages = [5, 9, 10, 11, 12, 13, 14, 15, 16, 17];
+const activeImage = document.querySelector('.active-image');
+
+changeImage = () => {
+
+    if (i < sliderImages.length - 1) {
+        i++;
+
+        activeImage.style.transition = "opacity 0.5s";
+        activeImage.style.opacity = 0;
+        setTimeout(function () {
+
+            activeImage.src = "../assets/images/" + sliderImages[i] + ".jpeg";
+
+            activeImage.style.opacity = 1;
+
+        }, 500);
+
+    } else {
+        i = 0;
+    }
+    setTimeout(changeImage, 6000);
+};
+
+window.onload = changeImage();
+
+
 // Expandable menu
 const menuButton = document.querySelector('.menu-button');
 const menu = document.querySelector('.menu');
@@ -44,19 +74,20 @@ const addClass = () => {
 //     }
 // }
 
-window.addEventListener('load',  addClass);
+window.addEventListener('load', addClass);
 
 // Animation for cards in contacts section
 const contacts = document.querySelectorAll('li.contact-card');
 
 runContactsAnimation = () => {
-    if (!document.querySelectorAll('li.contact-card:not(.visible')) return;
+    if (!document.querySelectorAll('li.contact-card:not(.shown')) return;
 
     for (const contact of contacts) {
+
         if (contact.getBoundingClientRect().top <= window.innerHeight * 0.75
-        && contact.getBoundingClientRect().top > 0) {
-            console.log(window.innerHeight + '~' + contact.getBoundingClientRect().top);
-            contact.classList.add('visible');
+            && contact.getBoundingClientRect().top > 0) {
+
+            contact.classList.add('shown');
         }
     }
 };

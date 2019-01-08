@@ -39,14 +39,13 @@ nav li a {
 
 nav li a.active, nav li a:hover {
     color: #F90056;
-
 }
 
-#gallery img {
+.active-image {
     height: 212px;
     width: 100%;
+    object-fit: cover;
 }
-
 
 ul.cards {
     padding-left: 0;
@@ -85,12 +84,14 @@ li.card-item p {
     line-height: 24px;
 }
 
+
 .prices {
     padding-top: 35px;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
     background-color: #ffc046;
     color: white;
     text-align: center;
+
 }
 
 .prices-card-title {
@@ -98,6 +99,9 @@ li.card-item p {
     font-size: 18px;
 }
 
+.section-title . {
+    margin-top: 70px;
+}
 .section-title img {
     text-align: center;
 }
@@ -111,7 +115,6 @@ li.card-item p {
 .prices li p {
     font-size: 20px;
     font-weight: 500;
-    /*padding: 10px;*/
 }
 
 hr {
@@ -174,8 +177,8 @@ button:hover {
     opacity: 0.8;
 }
 
-.contact-form {
-    /*margin: 0 30px;*/
+section {
+    margin-top: 90px;
 }
 
 .contacts {
@@ -185,6 +188,7 @@ button:hover {
 .contacts ul.cards {
     margin-left: 30px;
 }
+
 
 .contacts img {
     align-items: flex-end;
@@ -212,7 +216,7 @@ button:hover {
     padding-left: 40px;
 }
 
-.visible {
+.shown {
 
     animation: wave 1s ease-out;
 }
@@ -294,7 +298,7 @@ button:hover {
 
 
     .contact-form {
-        margin: 0 30px;
+        margin: 70px 30px;
     }
 }
 
@@ -343,7 +347,7 @@ button:hover {
 
     }
 
-    #gallery img {
+    #slider img {
         height: 465px;
     }
 
@@ -390,7 +394,7 @@ button:hover {
     }
 
     .contact-form {
-        margin: 50px 220px;
+        margin: 60px 220px;
     }
 
 }
@@ -404,7 +408,7 @@ button:hover {
         left: 7%;
     }
 
-    #gallery img {
+    #slider img {
         height: 334px;
     }
 
