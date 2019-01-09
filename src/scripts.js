@@ -26,7 +26,7 @@ changeImage = () => {
 
 };
 
-setInterval(changeImage, 3000);
+setInterval(changeImage, 6000);
 
 
 // Expandable menu
