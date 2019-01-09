@@ -400,12 +400,18 @@ section {
 
 @media screen and (min-width: 767px) and (max-width: 1300px) {
     .navigation {
-        margin-right: 80px;
+        margin-right: 10px;
+    }
+
+    .navigation li a {
+        font-size: 14px;
+        padding: 10px 7px;
     }
 
     .logo {
-        left: 7%;
+        left: 3%;
     }
+
 
     #slider {
         height: 350px;
